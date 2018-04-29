@@ -1,29 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
     private static Game instance;
-    private int Score;
-    private int Health;
+    private int _Score;
+    private int _Health;
     
-    public static Game get()
+    public static Game Get()
     {
         return instance;
     }
     private void Start()
     {
-        Score = 0;
-        Health = 100;
+        _Score = 0;
+        _Health = 100;
+    }
+
+    private void Update()
+    {
+        if (_Health <= 0)
+        {
+            SceneManager.LoadScene(2);
+            _Health = 100;            
+        }        
     }
     private void Awake()
     {        
-        instance = this;
-        DontDestroyOnLoad(instance);
+        instance = this;        
     }
     public void AddScore(int score)
     {
-        Score += score;        
+        _Score += score;        
+    }
+    public void SetHealth(int health)
+    {
+        _Health -= health;
     }
 }

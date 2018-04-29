@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_Cachuflito.Plugins", "FPS_Cachuflito.Plugins.csproj", "{190F02D5-480B-8E9C-D362-936F4B1F2313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_Cachuflito", "FPS_Cachuflito.csproj", "{8AB6CDDC-60A4-FF86-9351-133703F20699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_Cachuflito.Editor.Plugins", "FPS_Cachuflito.Editor.Plugins.csproj", "{7B9C4A2E-03B0-681C-697D-13DB4C72B2AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{190F02D5-480B-8E9C-D362-936F4B1F2313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190F02D5-480B-8E9C-D362-936F4B1F2313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190F02D5-480B-8E9C-D362-936F4B1F2313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190F02D5-480B-8E9C-D362-936F4B1F2313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB6CDDC-60A4-FF86-9351-133703F20699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB6CDDC-60A4-FF86-9351-133703F20699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB6CDDC-60A4-FF86-9351-133703F20699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB6CDDC-60A4-FF86-9351-133703F20699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9C4A2E-03B0-681C-697D-13DB4C72B2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9C4A2E-03B0-681C-697D-13DB4C72B2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9C4A2E-03B0-681C-697D-13DB4C72B2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9C4A2E-03B0-681C-697D-13DB4C72B2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

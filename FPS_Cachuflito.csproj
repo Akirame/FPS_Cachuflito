@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{85A2B589-B916-C148-CA77-FF55999B9ADA}</ProjectGuid>
+    <ProjectGuid>{8AB6CDDC-60A4-FF86-9351-133703F20699}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -235,9 +235,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FpsCachuflito.Plugins.csproj">
-      <Project>{DDAB6385-CAE2-D0DA-89F5-7E3CC00BEABF}</Project>
-      <Name>FpsCachuflito.Plugins</Name>
+    <ProjectReference Include="FPS_Cachuflito.Plugins.csproj">
+      <Project>{190F02D5-480B-8E9C-D362-936F4B1F2313}</Project>
+      <Name>FPS_Cachuflito.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -245,7 +245,6 @@
     <Compile Include="Assets\00_Game\Scrips\Game.cs" />
     <Compile Include="Assets\00_Game\Scrips\Instance.cs" />
     <Compile Include="Assets\00_Game\Scrips\Player.cs" />
-    <Compile Include="Assets\00_Game\Scrips\playerScript.cs" />
     <Compile Include="Assets\00_Game\Scrips\Trap.cs" />
     <Compile Include="Assets\00_Game\Scrips\Weapons.cs" />
   </ItemGroup>
