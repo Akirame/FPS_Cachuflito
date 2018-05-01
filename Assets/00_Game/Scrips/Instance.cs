@@ -11,13 +11,16 @@ public class Instance : MonoBehaviour
     public Transform prefab4;
     public Transform prefabWall;
     public GameObject trap;
+    public GameObject ghost;
     private Transform[] prefabs;
     private int[] randomEuler;
     private float spawnTrapTimer;
+    private float spawnGhostTimer;
 
     void Start()
     {
         spawnTrapTimer = 10;
+        spawnGhostTimer = 5;
         randomEuler = new int[] { 0, 90 };
         prefabs = new Transform[] { prefab1, prefab2, prefab3, prefab4 };
 
@@ -31,6 +34,7 @@ public class Instance : MonoBehaviour
         }
         Instantiate(prefabWall, new Vector3(40, 0, -49.6f), Quaternion.identity, this.transform);
         InvokeRepeating("SpawnTraps", spawnTrapTimer, spawnTrapTimer);
+        InvokeRepeating("SpawnGhost", spawnGhostTimer, spawnGhostTimer);
     }
     private void Update()
     {    
@@ -40,5 +44,9 @@ public class Instance : MonoBehaviour
         Instantiate(trap, new Vector3(Random.Range(-9f,89f), 0.2f,Random.Range(49f,-49f)), Quaternion.identity, this.transform);
         Instantiate(trap, new Vector3(Random.Range(-9f, 89f), 0.2f, Random.Range(49f, -49f)), Quaternion.identity, this.transform);
         Instantiate(trap, new Vector3(Random.Range(-9f, 89f), 0.2f, Random.Range(49f, -49f)), Quaternion.identity, this.transform);
+    }
+    private void SpawnGhost()
+    {
+        Instantiate(ghost, new Vector3(Random.Range(-9f, 89f), 2, Random.Range(49f, -49f)), Quaternion.identity, this.transform);
     }
 }

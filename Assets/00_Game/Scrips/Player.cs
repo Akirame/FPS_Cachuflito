@@ -5,8 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    private static Player instance;
-    private Rigidbody rigid;
+    private static Player instance;    
 
     public static Player Get()
     {
@@ -17,8 +16,7 @@ public class Player : MonoBehaviour
         instance = this;
     }
     private void Start()
-    {
-        rigid = GetComponent<Rigidbody>();
+    {        
     }
 
     public void getHit(int health)
@@ -37,5 +35,4 @@ public class Player : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(dir * force);
         }
     }
-
 }

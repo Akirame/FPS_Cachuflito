@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-public class Trap : MonoBehaviour {
-
-    private void OnDestroy()
+    public class Trap : MonoBehaviour
     {
-        Game.Get().AddScore(100);
-    }
+
+        private void OnDestroy()
+        {
+            Game.Get().AddScore(100);
+        }
 }

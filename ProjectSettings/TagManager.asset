@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trap
+  - Prop
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -14,11 +16,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Traps
+  - Props
+  - Ghost
+  - Player
+  - Bullet
   - 
   - 
   - 
