@@ -22,14 +22,14 @@ public class Game : MonoBehaviour
     public Camera cameraFinal;
     public GameObject ghostDetect;
     public Slider sliderBattery;
+
     private bool detectOn;
     private float detectBattery;
     private bool detectShutdown;
     private static Game instance;
     private int _Score;
     private int _Health;
-    private string weaponName;
-    private string bulletMagazine;
+    private string weaponName;    
     private int bulletCount;
     private int trapCount;
     private int ghostCount;
@@ -43,8 +43,7 @@ public class Game : MonoBehaviour
     {        
         _Score = 0;
         _Health = 100;
-        weaponName = "TRAPPERZAPPER";
-        bulletMagazine = "/1";
+        weaponName = "TRAPPERZAPPER";        
         bulletCount = 1;
         trapCount = 0;
         ghostCount = 0;
@@ -102,8 +101,15 @@ private void Update()
         scoreText.text = "POINTS:" + (_Score).ToString();
         if(weaponText!=null)
         weaponText.text = weaponName;
-        if(bulletText!=null)
-        bulletText.text = "CLIP:" + (bulletCount).ToString() + bulletMagazine;
+        if (bulletText != null)
+        {
+            if(Weapons.Get().GetBulletMagazine())
+            {
+            bulletText.text = "CLIP:" + (Weapons.Get().GetBulletTrap()).ToString() + "/1";
+            }
+            else
+                bulletText.text = "CLIP:" + (Weapons.Get().GetFlowerWeapon()).ToString() + "/6";
+        }
     }
     public void DrawTextsFinal()
     {     
@@ -116,11 +122,7 @@ private void Update()
     {
         weaponName = text;
     }
-    public void SetBulletText(int bullets, string bulletText)
-    {
-        bulletCount = bullets;
-        bulletMagazine = bulletText;
-    }
+
     public void TrapDestroyed()
     {
         trapCount++;

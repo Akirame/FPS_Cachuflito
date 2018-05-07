@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class BulletFlowerScript : MonoBehaviour
 {
-    
-    private Rigidbody rigid;
     private float count;
 
     void Start()
     {
         count = 0;
-        rigid = GetComponent<Rigidbody>();
     }
 
 

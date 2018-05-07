@@ -11,10 +11,28 @@ public class Weapons : MonoBehaviour
     public float rayDistance;
     public LayerMask rayCastLayer;
     public Camera cam;
+    public GameObject shootPoint;
+
+    private static Weapons instance;
     private bool boolTrap;
     private bool boolFlower;
     private int bulletTrapWeapon;
     private int bulletFlowerWeapon;
+
+    public static Weapons Get()
+    {
+        return instance;
+    }
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+            Destroy(this.gameObject);
+    }
+
     private void Start()
     {
         rayDistance = 5;
@@ -27,8 +45,7 @@ public class Weapons : MonoBehaviour
     {
         SelectWeapon();
         ShootWeapon();
-        Reload();
-        SetBulletText();
+        Reload();        
     }
 
     private void SelectWeapon()
@@ -79,8 +96,9 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && boolFlower == true && bulletFlowerWeapon > 0)
         {
-            GameObject obj = Instantiate(FlowerBullet, transform.position, Quaternion.identity);
-            obj.GetComponent<Rigidbody>().velocity = transform.TransformDirection(new Vector3(0, 0, 25));            
+            GameObject obj = Instantiate(FlowerBullet, shootPoint.transform.position, Quaternion.identity,shootPoint.transform);
+            obj.GetComponent<Rigidbody>().velocity = transform.TransformDirection(new Vector3(0, 0, 25));
+            obj.transform.rotation = shootPoint.transform.rotation;
             bulletFlowerWeapon--;
             Game.Get().BulletShooted();
         }
@@ -96,15 +114,21 @@ public class Weapons : MonoBehaviour
             bulletTrapWeapon = 1;
         }
     }
-    private void SetBulletText()
+    public bool GetBulletMagazine()
     {
-        if (boolTrap == true)
-        {
-            Game.Get().SetBulletText(bulletTrapWeapon, "/1");
-        }
-        if (boolFlower == true)
-        {
-            Game.Get().SetBulletText(bulletFlowerWeapon, "/6");
-        }
+        if (boolTrap && !boolFlower)
+            return true;
+        else
+            return false;
+
     }
+    public int GetBulletTrap()
+    {
+        return bulletTrapWeapon;
+    }
+    public int GetFlowerWeapon()
+    {
+        return bulletFlowerWeapon;
+    }
+
 }

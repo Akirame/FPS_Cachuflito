@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4785101240490254}
   - component: {fileID: 114637392430704012}
   m_Layer: 0
-  m_Name: Instantiator
+  m_Name: InstanceMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,3 +56,5 @@ MonoBehaviour:
   prefab3: {fileID: 4027534543030670, guid: 77ab4ea6aeec35f4d8f36cd313b3efbd, type: 2}
   prefab4: {fileID: 4918328046527316, guid: 0a651adfa6a21dc47a163b45cb2c7c99, type: 2}
   prefabWall: {fileID: 4881454743809096, guid: 636ca46c99bda77488dda6496dcd5d54, type: 2}
+  trap: {fileID: 1187937939989346, guid: 35535e103af5ef24da03c4c9186c3f00, type: 2}
+  ghost: {fileID: 1344334557354006, guid: 6c9e98b14f6ede44baad2b3460ab3a48, type: 2}

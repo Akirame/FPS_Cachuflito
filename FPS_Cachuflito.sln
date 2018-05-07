@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_Cachuflito.Plugins", "FPS_Cachuflito.Plugins.csproj", "{190F02D5-480B-8E9C-D362-936F4B1F2313}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_Cachuflito", "FPS_Cachuflito.csproj", "{8AB6CDDC-60A4-FF86-9351-133703F20699}"

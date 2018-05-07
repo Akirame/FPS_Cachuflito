@@ -4,23 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Button : MonoBehaviour {
-
-    private Button but;
-
-    private void Start()
-    {
-        but = GetComponent<Button>();
-    }
+public class SceneManager : MonoBehaviour {
 
     public void LoadScene0()
     {
-        SceneManager.LoadScene(0);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         Game.Get().DestroyGame();
     }
 
     public void LoadScene1()
     {
-        SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }
