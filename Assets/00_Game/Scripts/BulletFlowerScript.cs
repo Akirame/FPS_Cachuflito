@@ -14,7 +14,7 @@ public class BulletFlowerScript : MonoBehaviour
 
     void Update()
     {        
-        if (count >= 1.5f)
+        if (count >= 3f)
         {
             Destroy(gameObject);
         }

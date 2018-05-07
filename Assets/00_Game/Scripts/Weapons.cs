@@ -96,7 +96,7 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && boolFlower == true && bulletFlowerWeapon > 0)
         {
-            GameObject obj = Instantiate(FlowerBullet, shootPoint.transform.position, Quaternion.identity,shootPoint.transform);
+            GameObject obj = Instantiate(FlowerBullet, shootPoint.transform.position, Quaternion.identity);
             obj.GetComponent<Rigidbody>().velocity = transform.TransformDirection(new Vector3(0, 0, 25));
             obj.transform.rotation = shootPoint.transform.rotation;
             bulletFlowerWeapon--;
