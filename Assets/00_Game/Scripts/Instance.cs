@@ -17,7 +17,7 @@ public class Instance : MonoBehaviour
     private float spawnTrapTimer;
     private float spawnGhostTimer;
 
-    void Start()
+    private void Start()
     {
         spawnTrapTimer = 10;
         spawnGhostTimer = 5;

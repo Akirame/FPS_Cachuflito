@@ -9,8 +9,7 @@ public class Weapons : MonoBehaviour
     public GameObject FlowerWeapon;
     public GameObject FlowerBullet;
     public float rayDistance;
-    public LayerMask rayCastLayer;
-    public Camera cam;
+    public LayerMask rayCastLayer;    
     public GameObject shootPoint;
 
     private static Weapons instance;

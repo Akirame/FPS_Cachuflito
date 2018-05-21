@@ -242,11 +242,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\00_Game\Scripts\BulletFlowerScript.cs" />
-    <Compile Include="Assets\00_Game\Scripts\Button.cs" />
     <Compile Include="Assets\00_Game\Scripts\Game.cs" />
     <Compile Include="Assets\00_Game\Scripts\Ghost.cs" />
     <Compile Include="Assets\00_Game\Scripts\Instance.cs" />
     <Compile Include="Assets\00_Game\Scripts\Player.cs" />
+    <Compile Include="Assets\00_Game\Scripts\SceneManager.cs" />
     <Compile Include="Assets\00_Game\Scripts\Trap.cs" />
     <Compile Include="Assets\00_Game\Scripts\Weapons.cs" />
   </ItemGroup>

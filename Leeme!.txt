@@ -1,0 +1,8 @@
+Controles
+
+WASD 		moverse
+space		saltar
+Left click	disparar
+Right click	recargar
+R		recargar
+F		activar visor ( ver fantasmas invisibles)

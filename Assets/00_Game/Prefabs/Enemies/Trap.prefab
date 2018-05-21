@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4969344553156122}
   - component: {fileID: 33609780011609272}
-  - component: {fileID: 65072748878663896}
   - component: {fileID: 23938210737875474}
-  - component: {fileID: 114872266274318148}
+  - component: {fileID: 114897101519070006}
+  - component: {fileID: 65450653817002680}
   m_Layer: 8
   m_Name: Trap
   m_TagString: Trap
@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1187937939989346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8688595, y: 6.369596, z: 3.5716782}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0011867, y: 0.0093588, z: -0.00078022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: c7bae1584d7575c4ba47f9fc1f99bd4b, type: 2}
   m_StaticBatchInfo:
@@ -65,7 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
+  m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -83,8 +84,8 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1187937939989346}
-  m_Mesh: {fileID: 4300000, guid: 119f10bf7d7a4444b99e3b15c114ac6e, type: 3}
---- !u!65 &65072748878663896
+  m_Mesh: {fileID: 4300000, guid: adc9f629e7a9ca3468afe4d5f48f6ec4, type: 3}
+--- !u!65 &65450653817002680
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -94,9 +95,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.022363, y: 1, z: 3.0343318}
-  m_Center: {x: -0.014791369, y: 0, z: -0.007315874}
---- !u!114 &114872266274318148
+  m_Size: {x: 3, y: 0.8828689, z: 3}
+  m_Center: {x: 0, y: -0.000000014901161, z: 0}
+--- !u!114 &114897101519070006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
